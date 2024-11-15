@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Link from 'next/link';
 import {
   AppBar,
   Toolbar,
@@ -63,10 +64,12 @@ export const Navbar = () => {
     <AppBar position='static' color='primary'>
       <Toolbar variant="dense">
         <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
-          <img src="/logo.png" alt="logo" width={20} height={20}/>
+          <img src="/logo.png" alt="logo" width={50} height={20}/>
         </IconButton>
         <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
-          Cloud
+          <Link href="/">
+          VAR Cloud
+          </Link>
         </Typography>
         <Stack direction='row' spacing={2}>
           {/* Button for Electrical */}
@@ -150,11 +153,11 @@ export const Navbar = () => {
           MenuListProps={{
             'aria-labelledby': 'resources-button-electrical',
           }}>
-          <MenuItem onClick={() => navigateTo('/dashboard/elec_item_price')}>Price List</MenuItem>
+          <MenuItem onClick={() => navigateTo('/dashboard/mep_item_price')}>Price List</MenuItem>
           <MenuItem onClick={() => navigateTo('/dashboard/elec_unitrate_calc')}>Calc</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
         </Menu>
 
         {/* Menu for Construction */}
@@ -174,11 +177,11 @@ export const Navbar = () => {
           MenuListProps={{
             'aria-labelledby': 'resources-button-construction',
           }}>
-          <MenuItem onClick={() => navigateTo('/dashboard/elec_item_price')}>Price List</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
+          <MenuItem onClick={() => navigateTo('/dashboard/mep_item_price')}>Price List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
         </Menu>
 
         {/* Menu for IT */}
@@ -199,9 +202,9 @@ export const Navbar = () => {
             'aria-labelledby': 'resources-button-it',
           }}>
           <MenuItem onClick={handleClose}>Blog</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
         </Menu>
 
         {/* Menu for Business */}
@@ -222,9 +225,9 @@ export const Navbar = () => {
             'aria-labelledby': 'resources-button-business',
           }}>
           <MenuItem onClick={handleClose}>Blog</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
         </Menu>
 
         {/* Menu for Film Making */}
@@ -245,9 +248,9 @@ export const Navbar = () => {
             'aria-labelledby': 'resources-button-film',
           }}>
           <MenuItem onClick={handleClose}>Blog</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
-          <MenuItem onClick={handleClose}>Podcast</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
+          <MenuItem onClick={handleClose}>List</MenuItem>
         </Menu>
       </Toolbar>
     </AppBar>

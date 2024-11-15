@@ -14,7 +14,7 @@ import {
   Typography,
 } from "@mui/material";
 
-function Electrical1() {
+function MepItemsPrice() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
@@ -52,7 +52,7 @@ function Electrical1() {
   return (
     <Container>
       <Typography variant="h4" gutterBottom>
-        Electrical Items Price
+        MEP Materials Price
       </Typography>
       <TextField
         label="Search"
@@ -110,4 +110,4 @@ function Electrical1() {
   );
 }
 
-export default Electrical1;
+export default MepItemsPrice;

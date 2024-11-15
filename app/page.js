@@ -26,7 +26,7 @@ export default function Home() {
             },
           }}
         >
-          Dashboard
+          VAR Cloud
         </Typography>
       </Link>
     </Box>
